@@ -21,9 +21,9 @@ const HomeBody = () => {
                 FIND YOUR NEXT <span className="blue">"THING"</span> TO BINGE
             </div>
             <div className="search__container">
-                <input placeholder="Search" onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key=== 'Enter' && navigate(`/${search}`)} className="search__field" /> 
+                <input placeholder="Search" onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key=== 'Enter' && navigate(`/search/${search}`)} className="search__field" /> 
                 <button className="search__button"> 
-                    <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => navigate(`/${search}`)} />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => navigate(`/search/${search}`)} />
                 </button>
             </div>
                 

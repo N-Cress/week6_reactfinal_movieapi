@@ -34,9 +34,9 @@ const SearchLanding = () => {
             <div className="movie-nav__search">
             <div className="browse"> Find a movie </div>
             <div className="movie-search__container">
-                <input className="movie-search__field"  onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key=== 'Enter' && navigate(`/${search}`)} /> 
-                <button className="movie-search__button" onClick={() => navigate(`/${search}`)}> 
-                    <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => navigate(`/${search}`)} />
+                <input className="movie-search__field"  onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key=== 'Enter' && navigate(`/search/${search}`)} /> 
+                <button className="movie-search__button"> 
+                    <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => navigate(`/search/${search}`)} />
                 </button>
             </div>
         </div>
