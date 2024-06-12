@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const apiRoute = "http://www.omdbapi.com/?apikey=7d7109ef&s=";
@@ -21,9 +21,7 @@ const SearchBody = () => {
                 console.log(error);
             }
             setLoaded(true);
-            
         } 
-       
     }
 
 

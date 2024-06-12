@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/undraw_horror.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import "../styles.css";
 
-const apiRoute = "https://www.omdbapi.com?apikey=7d7108ef&s="
 
 
 const HomeBody = () => {

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../assets/undraw_award.svg";
-import { Link, useParams, useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Link} from 'react-router-dom';
+
 
 
 const Landing = () => {
