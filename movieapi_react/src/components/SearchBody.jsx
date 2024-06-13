@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+
+
 
 const apiRoute = "http://www.omdbapi.com/?apikey=7d7109ef&s=";
 
@@ -8,6 +10,8 @@ const SearchBody = () => {
     const [results, setResults] = useState([]);
     const [loaded, setLoaded] = useState(false);
     const { id } = useParams(); 
+
+    const navigate = useNavigate();
 
     async function getResults(userInput) {  
         setLoaded(false);
@@ -40,14 +44,14 @@ const SearchBody = () => {
             
             <div className="movie">
             { loaded ? results.map((movie) => (
-                        <div key={movie.imdbID} className="movie__item"> 
-                            <img src={movie.Poster} className="movie__img" alt={movie.Title}/> 
-                            <div className="movie__text"> 
-                                <div className="movie__title"> Title: {movie.Title} </div>
-                                <div className="movie__year"> Year: {movie.Year} </div>
-                                <div className="movie__year"> imdbID: {movie.imdbID} </div>
-                            </div>
-                        </div>  
+                    <div onClick={() => navigate(`/movies/${movie.imdbID}`)} key={movie.imdbID} className="movie__item"> 
+                        <img src={movie.Poster} className="movie__img" alt={movie.Title}/> 
+                        <div className="movie__text"> 
+                            <div className="movie__title"> Title: {movie.Title} </div>
+                            <div className="movie__year"> Year: {movie.Year} </div>
+                            <div className="movie__year"> imdbID: {movie.imdbID} </div>
+                        </div>
+                    </div> 
                 )) : 
                 [...Array(id ? 6 : 0)].map((_, index) => (
                     <div key={index} className="movie__item">
