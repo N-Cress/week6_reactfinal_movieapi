@@ -6,8 +6,10 @@ import "../styles.css";
 const Home = () => {
   return (
     <>
-    <Landing />
-    <HomeBody />
+    <div className="home-container">
+      <Landing />
+      <HomeBody />
+    </div>
     </>
   )
 }

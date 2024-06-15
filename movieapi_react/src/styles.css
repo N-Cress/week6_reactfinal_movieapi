@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
@@ -13,10 +11,15 @@ a {
   
 }
 
-
+.App, html {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     background-color: #F8f8f8;
+    margin: 0px;
+   
 }
 
 ul {
@@ -40,10 +43,16 @@ ul {
 
 button {
     cursor: pointer;
-
     transition: all 400ms;
 }
 
+
+.home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* NAV */
 
@@ -356,3 +365,53 @@ button {
 .scores-site {
     font-weight: bold;
 }
+
+
+/* RESPONSIVE DESIGN - HOME */
+
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 58px;
+    }
+    .header__img {
+        width: 80%;
+        height: 80%;
+    }
+    .nav__link {
+        margin: 0 0px;
+    }
+    .nav__logo {
+        height: 96px;
+        width: 96px;
+    }
+    .nav__list-item {
+        margin: 0 12px;
+    }
+  }
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 48px;
+    }
+    .header__img {
+        width: 80%;
+        height: 80%;
+    }
+    .nav__list-item {
+        margin: 0 12px;
+    }
+    .nav__link {
+        margin: 0 0px;
+    }
+    .nav__container {
+        padding: 8px;
+        justify-content: space-around;
+    }
+    .nav__button {
+        padding: 16px 24px;
+    }
+}
+
+/* RESPONSIVE DESIGN - SEARCH */

@@ -21,7 +21,7 @@ const SearchLanding = () => {
                     </li>
                     <li className="nav__list-item"> 
                         <Link to="/search">
-                            <div className="nav__link"> Find a movie  </div>
+                            <div className="nav__link"> Search </div>
                         </Link>
                     </li>
                     <li className="nav__list-item nav__button"> 
@@ -32,7 +32,7 @@ const SearchLanding = () => {
                 </ul>
             </div>
             <div className="movie-nav__search">
-            <div className="browse"> Find a movie </div>
+            <div className="browse"> </div>
             <div className="movie-search__container">
                 <input className="movie-search__field"  onChange={(event) => setSearch(event.target.value)} onKeyDown={(event) => event.key=== 'Enter' && navigate(`/search/${search}`)} /> 
                 <button className="movie-search__button"> 

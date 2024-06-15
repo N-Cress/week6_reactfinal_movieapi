@@ -18,7 +18,7 @@ const Landing = () => {
                     </li>
                     <li className="nav__list-item"> 
                         <Link to="/search">
-                            <div className="nav__link"> Find a movie  </div>
+                            <div className="nav__link"> Search  </div>
                         </Link>
                     </li>
                     <li className="nav__list-item nav__button"> 

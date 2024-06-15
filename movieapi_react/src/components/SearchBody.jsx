@@ -38,9 +38,9 @@ const SearchBody = () => {
     <header id="movie__result">
         <div className="movie__container">
             { id ? 
-            <div className="movie__search"> Search results: </div>
+            <div className="movie__search"> Results: </div>
         :
-        <div className="movie__search"> Please search a movie </div>}
+        <div className="movie__search"> Search a movie </div>}
             
             <div className="movie">
             { loaded ? results.map((movie) => (
