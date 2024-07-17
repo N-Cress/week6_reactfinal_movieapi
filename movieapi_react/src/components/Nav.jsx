@@ -1,10 +1,8 @@
 import React from 'react';
 import logo from "../assets/undraw_award.svg";
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-
-
-const Landing = () => {
+const Nav = () => {
   return (
     <>
         <nav>
@@ -33,4 +31,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default Nav;

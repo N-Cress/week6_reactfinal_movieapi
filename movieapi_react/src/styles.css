@@ -221,6 +221,10 @@ button {
     border-radius: 15px;
 }
 
+.movie__item:hover {
+    cursor: pointer;
+}
+
 .movie__text {
     display: flex;
     flex-direction: column;
@@ -228,18 +232,20 @@ button {
     font-weight: 700;
     width: 100%;
     margin-left: 40px;
+    
 }
 
 .movie__img {
     width: 100%;
-    height: 100%;
+    height: 95%;
     border-radius: 25px;
     padding-bottom: 4px;
 }
 
 .movie__img-skeleton {
-    width: 100%;
+    width: 360px;
     height: 100%;
+    
     border-radius: 25px;
     background-color: grey;
 }
@@ -261,6 +267,15 @@ button {
     margin-bottom: 40px;
     text-align: start;
     padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
 
 .browse {
@@ -463,7 +478,9 @@ button {
     .movie__item {
         width: 80%;
     }
-    
+    .movie__text {
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 576px) {

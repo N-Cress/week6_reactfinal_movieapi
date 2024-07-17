@@ -1,12 +1,12 @@
 import React from 'react';
 import SearchBody from '../components/SearchBody.jsx';
-import SearchLanding from '../components/SearchLanding.jsx';
+import SearchNav from '../components/SearchNav.jsx';
 
 
 const Search = () => {
   return (
     <>
-    <SearchLanding />
+    <SearchNav />
     <SearchBody />
     </>
   )

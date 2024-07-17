@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from "../components/Landing.jsx";
+import Nav from "../components/Nav.jsx";
 import HomeBody from '../components/HomeBody.jsx';
 import "../styles.css";
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <div className="home-container">
-      <Landing />
+      <Nav />
       <HomeBody />
     </div>
     </>

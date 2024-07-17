@@ -4,7 +4,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import logo from "../assets/undraw_award.svg";
 import { Link, useNavigate } from 'react-router-dom';
 
-const SearchLanding = () => {
+const SearchNav = () => {
     const [search, setSearch] = useState();
     const navigate = useNavigate();
 
@@ -46,4 +46,4 @@ const SearchLanding = () => {
   )
 }
 
-export default SearchLanding
+export default SearchNav;

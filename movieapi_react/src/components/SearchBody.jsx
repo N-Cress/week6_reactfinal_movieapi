@@ -27,7 +27,18 @@ const SearchBody = () => {
             setLoaded(true);
         } 
     }
-
+    
+    function updateResults(userOption) {
+        if (userOption === "Newest") {
+            let organizedArray = (results.sort((a, b) => b.Year - a.Year))
+            setResults([...organizedArray])
+        
+        }
+        else if (userOption === "Oldest") {
+            let organizedArray = (results.sort((a, b) => a.Year - b.Year))
+            setResults([...organizedArray])
+        }
+    } 
 
 
     useEffect(() => {
@@ -38,10 +49,23 @@ const SearchBody = () => {
     <header id="movie__result">
         <div className="movie__container">
             { id ? 
-            <div className="movie__search"> Results: </div>
+            <div className="movie__search"> 
+                <div className="movie__search-right"> Results: </div>
+                <div className="movie__search-left"> 
+                    <form>
+                        <label> Sort by: </label>
+                        <select onChange={(e) => updateResults(e.target.value)} className="search__select" name="sortBy" id="sortBy">
+                            <option value="Oldest"> Oldest </option>
+                            <option value="Newest"> Newest </option>
+                        </select>
+                    </form>
+                </div>
+            
+            </div>
+       
         :
         <div className="movie__search"> Search a movie </div>}
-            
+        
             <div className="movie">
             { loaded ? results.map((movie) => (
                     <div onClick={() => navigate(`/movies/${movie.imdbID}`)} key={movie.imdbID} className="movie__item"> 
@@ -56,9 +80,12 @@ const SearchBody = () => {
                 [...Array(id ? 6 : 0)].map((_, index) => (
                     <div key={index} className="movie__item">
                         <div className="movie__img-skeleton"> </div>
-                        <div className="movie__title"> Title:  </div>
-                        <div className="movie__year"> Year:  </div>
-                        <div className="movie__year"> imdbID: </div>
+                        <div className="movie__text">
+                            <div className="movie__title"> Title:  </div>
+                            <div className="movie__year"> Year:  </div>
+                            <div className="movie__year"> imdbID: </div>
+                        </div>
+                       
                     </div>
                  
                 ))

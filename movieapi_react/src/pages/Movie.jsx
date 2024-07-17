@@ -1,11 +1,11 @@
 import React from 'react';
-import Landing from "../components/Landing.jsx";
+import Nav from "../components/Nav.jsx";
 import MovieBody from "../components/MovieBody.jsx";
 
 const Movie = () => {
   return (
     <>
-    <Landing />
+    <Nav />
     <MovieBody />
     </>
   )
