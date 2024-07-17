@@ -210,7 +210,8 @@ button {
 }
 
 .movie__item {
-    width: 30%;
+    width: 30%;  
+    height: 70vh;
     margin: 14px;
     display: flex;
     flex-direction: column;
