@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
-const apiRoute = "http://www.omdbapi.com/?apikey=7d7109ef&i=";
+const apiRoute = "https://www.omdbapi.com/?apikey=7d7109ef&i=";
 
 const MovieBody = () => {
     const [movie_data, setMovie_data] = useState([]);

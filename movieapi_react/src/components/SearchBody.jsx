@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 
-const apiRoute = "http://www.omdbapi.com/?apikey=7d7109ef&s=";
+const apiRoute = "https://www.omdbapi.com/?apikey=7d7109ef&s=";
 
 const SearchBody = () => {
     const [results, setResults] = useState([]);
