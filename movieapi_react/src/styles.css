@@ -481,6 +481,9 @@ button {
     .movie__text {
         font-size: 8px;
     }
+    .movie__img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
