@@ -456,6 +456,11 @@ button {
 
 
 /* RESPONSIVE DESIGN - SEARCH */
+@media (max-width: 1224px) {
+    .movie__img-skeleton {
+        width: 100%;
+    }
+}
 
 @media (max-width: 992px) { 
 
@@ -481,9 +486,7 @@ button {
     .movie__text {
         font-size: 8px;
     }
-    .movie__img {
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 576px) {
