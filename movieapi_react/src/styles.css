@@ -83,11 +83,13 @@ button {
     padding: 4px;
     border-radius: 50%;
     transition: all 400ms;
+    margin-top: 24px;
 }
 
 .nav__logo:hover {
     background-color: #2b4757;
     cursor: pointer;
+    padding: 12px;
 }
 
 .nav__container {
