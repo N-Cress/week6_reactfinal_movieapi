@@ -131,6 +131,10 @@ button {
     cursor: pointer;
 }
 
+.disabled__link:hover {
+    cursor: not-allowed;
+}
+
 /* HEADER */
 
 .header__container {
@@ -191,8 +195,14 @@ button {
     border-radius: 15px;
     padding: 12px 48px;
 }
+
+.search__button {
+    display: none ;
+}
+
 .search__button:hover {
     cursor: pointer;
+    background-color: #2b4757;
 }
 .search__button:active {
     background-color: #69b8b1;
@@ -221,6 +231,7 @@ button {
     padding: 12px;
     box-shadow: 4px 1px 16px black;
     border-radius: 15px;
+    
 }
 
 .movie__item:hover {
@@ -242,6 +253,7 @@ button {
     height: 95%;
     border-radius: 25px;
     padding-bottom: 4px;
+    object-fit: scale-down;
 }
 
 .movie__img-skeleton {
@@ -342,6 +354,7 @@ button {
     font-size: 24px;
     transition: all 300ms;
     display: flex;
+    
 }
 
 /* INDIV MOVIE PAGE */  
@@ -431,6 +444,9 @@ button {
     }
     .nav__button {
         padding: 16px 24px;
+    }
+    .search__button {
+        display: none !important;
     }
 }
 
